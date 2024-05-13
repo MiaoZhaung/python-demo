@@ -1,0 +1,22 @@
+# 后台运行
+
+1. Unix-like 系统（包括Linux 和 MacOS)
+
+nohub python your_script.py > output.log 2>&1 &
+
+
+2. Windows 系统
+
+start /B python your_script.py
+
+3. 使用Python的multiprocessing模块
+
+from multiprocessing import Process
+
+def background_task():
+  print("后台任务执行中")
+
+
+if __name__ == "__main__":
+  p = Process(target=background_task)
+  p.start()
