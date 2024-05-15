@@ -9,4 +9,8 @@
 
 5. git pull --rebase <name> <branch>
 
-5. git push -u <name> <branch>
+6. git push -u <name> <branch>
+
+7. git push --force <name> <branch>
+
+8. git --set-upstream <name> <branch>
