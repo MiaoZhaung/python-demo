@@ -2,8 +2,11 @@ from dataclasses import dataclass
 from flask import Flask
 import logging
 import time
+import os
 
 
+if not os.path.exists("logs"):
+    os.makedirs("logs")
 filename = f'logs/{time.strftime("%Y-%m-%d")}.log'
 logging.basicConfig(filename=filename, level=logging.INFO)
 logging.debug("This message should go to the log file")
