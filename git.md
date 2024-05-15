@@ -14,3 +14,5 @@
 7. git push --force <name> <branch>
 
 8. git --set-upstream <name> <branch>
+
+9. 
